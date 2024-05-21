@@ -26,11 +26,10 @@
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js"></script>
     <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
-    <script src="https://cdn.jsdelivr.net/npm/@barba/core"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"></script>
   </head>
 
-  <body data-barba="wrapper">
+  <body>
     <!-- Service information-->
     <header class="header">
       <div class="header-div custom-container">
@@ -45,7 +44,7 @@
             <li>
               <a href="./cannabis.html" class="menu-item link">Каннабис</a>
             </li>
-            <li><a href="" class="menu-item link">Табак</a></li>
+            <li><a href="./tobacco.html" class="menu-item link">Табак</a></li>
             <li>
               <a href="./wood.html" class="active menu-item link">Дерево</a>
             </li>
@@ -89,7 +88,9 @@
         <li class="shape-circle circle-one">
           <a href="./cannabis.html">Каннабис</a>
         </li>
-        <li class="shape-circle circle-two"><a href="#">Табак</a></li>
+        <li class="shape-circle circle-two">
+          <a href="./tobacco.html">Табак</a>
+        </li>
         <li class="shape-circle circle-three">
           <a href="./wood.html">Дерево</a>
         </li>
@@ -97,7 +98,7 @@
       </ul>
     </nav>
 
-    <main data-barba="container" data-barba-namespace="home">
+    <main>
       <!-- Offer -->
       <section class="offer">
         <div class="custom-container">
@@ -294,6 +295,26 @@
       </div>
     </section>
 
+    <section class="plants-section">
+      <div class="container">
+        <div class="text-content">
+          <h2 class="section-title">Мы продаем ростки 🌱</h2>
+          <p class="section-description">Авокадо или других деревьев</p>
+        </div>
+        <div class="image-grid">
+          <div class="image-item">
+            <img src="images/plants2.JPG" alt="Ростки растений">
+          </div>
+          <div class="image-item">
+            <img src="images/plants1.JPG" alt="Росток авокадо">
+          </div>
+          <div class="image-item">
+            <img src="images/plants3.JPG" alt="Другое дерево">
+          </div>
+        </div>
+      </div>
+    </section>
+
     <div class="gallery">
       <div class="hero">
         <img src="images/g-1.JPG" />
@@ -386,7 +407,7 @@
           <a href="./cannabis.html" class="mobile-menu-item link">Каннабис</a>
         </li>
         <li>
-          <a href="" class="mobile-menu-item link">Табак</a>
+          <a href="./tobacco.html" class="mobile-menu-item link">Табак</a>
         </li>
         <li>
           <a href="./wood.html" class="mobile-menu-item link active">Дерево</a>

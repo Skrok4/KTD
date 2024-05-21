@@ -9,6 +9,7 @@ body {
     background: -webkit-linear-gradient(to right, #F3F9A7, #CAC531);
     background: linear-gradient(to right, #F3F9A7, #CAC531); */
 }
+
 :root {
   --border-color: #cccccc;
   --background-color: #f1f1f1;
@@ -71,13 +72,22 @@ body {
 
   .layer h2 {
     font-size: 1.2rem;
-    padding: 0 15px;
+    padding: 0 25px;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .layer h2 {
+    font-size: 1rem;
+    padding: 25px 15px;
   }
 }
 
 .video-section {
   text-align: center;
 }
+
 .video-section iframe {
   margin: 0 auto;
   display: block;
@@ -126,6 +136,7 @@ body {
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   margin: 0 auto;
 }
+
 h2 {
   font-size: 2rem;
   margin-bottom: 20px;
@@ -322,10 +333,7 @@ main {
   transition: var(--transition);
 }
 
-.accordion
-  .accordion-item.open
-  .accordion-item-header
-  .accordion-item-header-icon {
+.accordion .accordion-item.open .accordion-item-header .accordion-item-header-icon {
   transform: rotate(-180deg);
 }
 
@@ -340,18 +348,11 @@ main {
   grid-template-rows: 1fr;
 }
 
-.accordion
-  .accordion-item
-  .accordion-item-description-wrapper
-  .accordion-item-description {
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description {
   min-height: 0;
 }
 
-.accordion
-  .accordion-item
-  .accordion-item-description-wrapper
-  .accordion-item-description
-  p {
+.accordion .accordion-item .accordion-item-description-wrapper .accordion-item-description p {
   padding: 10px;
   line-height: 1.5;
 }
@@ -365,7 +366,8 @@ main {
 .video-container {
   position: relative;
   overflow: hidden;
-  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  padding-bottom: 56.25%;
+  /* 16:9 aspect ratio */
   margin: 0 auto;
   max-width: 100%;
 }
@@ -382,6 +384,7 @@ main {
   h2 {
     font-size: 28px;
   }
+
   .img-container img {
     max-width: 90%;
   }
@@ -399,6 +402,7 @@ main {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -416,6 +420,7 @@ h2 {
 .info-block {
   opacity: 1;
 }
+
 .layer,
 .info-block,
 .products,

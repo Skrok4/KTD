@@ -16,9 +16,9 @@
     }
 }
 
-.hero {
-    /* aspect-ratio: 3/2; */
-}
+/* .hero {
+    aspect-ratio: 3/2;
+} */
 
 .fadeIn {
     animation: fadeIn 0.5s;
@@ -46,5 +46,77 @@
         &:hover {
             opacity: 0.8;
         }
+    }
+}
+
+
+/* Plants */
+
+.plants-section {
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.section-description {
+    font-size: 1.2em;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.image-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.image-item {
+    width: 100%;
+}
+
+.image-item img {
+    width: 100%;
+    height: auto;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+@media (min-width: 768px) {
+
+    .section-title {
+        font-size: 2em;
+    }
+
+    .container {
+        display: flex;
+        align-items: flex-start;
+    }
+
+    .text-content {
+        flex: 1;
+    }
+
+    .image-grid {
+        flex: 1;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 20px;
+    }
+
+    .image-item:nth-child(1) {
+        grid-column: 1 / span 2;
+        grid-row: 1;
+    }
+
+    .image-item:nth-child(2),
+    .image-item:nth-child(3) {
+        grid-column: span 1;
+        grid-row: 2;
     }
 }
