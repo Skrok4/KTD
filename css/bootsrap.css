@@ -1,25 +1,21 @@
 #supply {
   background-color: #f8f9fa;
-  /* Bootstrap bg-light color */
   padding-top: 5rem;
   padding-bottom: 5rem;
 }
 
 #supply h2 {
   font-size: 2.5rem;
-  /* Bootstrap display-4 size */
   margin-bottom: 1.5rem;
 }
 
 #supply p {
   font-size: 1.25rem;
-  /* Bootstrap lead size */
   margin-bottom: 2.5rem;
 }
 
 #supply h3 {
   font-size: 2rem;
-  /* Custom size for partners heading */
   margin-bottom: 1.5rem;
 }
 
@@ -27,12 +23,10 @@
 @media (max-width: 767px) {
   #supply h2 {
     font-size: 2rem;
-    /* Adjust font size for smaller screens */
   }
 
   #supply p {
     font-size: 1rem;
-    /* Adjust font size for smaller screens */
   }
 
   #supply {
@@ -40,15 +34,6 @@
     padding-bottom: 2rem;
   }
 }
-
-/* Container Styles */
-/* .container {
-    width: 100%;
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-  } */
 
 /* Row Styles */
 .row {
@@ -59,23 +44,24 @@
 }
 
 /* Column Styles */
+.col-md-8, .col-md-4, .col-sm-12 {
+  padding-right: 15px;
+  padding-left: 15px;
+}
+
 .col-md-8 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
 .col-md-4 {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
-  padding-right: 15px;
-  padding-left: 15px;
 }
 
-.col-md-8.offset-md-2 {
-  margin-left: 16.666667%;
-  /* 2/12 offset */
+.col-sm-12 {
+  flex: 0 0 100%;
+  max-width: 100%;
 }
 
 /* Justify Content Center */
@@ -89,6 +75,10 @@
 }
 
 /* Margin Bottom */
+.mb-2 {
+  margin-bottom: 0.5rem !important;
+}
+
 .mb-4 {
   margin-bottom: 1.5rem !important;
 }
@@ -100,4 +90,11 @@
 /* Padding Bottom */
 .pb-5 {
   padding-bottom: 2.5rem !important;
+}
+
+@media (max-width: 768px) {
+  .col-sm-12 {
+    padding-left: 16px !important;
+    padding-right: 16px !important;
+  }
 }
